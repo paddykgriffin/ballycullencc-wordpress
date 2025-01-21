@@ -1,0 +1,28 @@
+
+// SETTINGS
+@import "settings/settings.all";
+
+// TOOLS
+@import "tools/tools.all";
+
+// ASSETS
+@import "assets/assets.all";
+
+
+// Load Understrap Defaults
+@import "../src/sass/understrap/understrap/understrap"; 
+
+
+// Components
+@import "components/theme";  
+@import "components/header";   
+@import "components/offcanvas";   
+@import "components/hero";  
+@import "components/grid-box";  
+@import "components/sermons";  
+@import "components/location";  
+@import "components/contact-form";  
+@import "components/calltoaction";  
+@import "components/sidebar";  
+@import "components/footer";  
+  

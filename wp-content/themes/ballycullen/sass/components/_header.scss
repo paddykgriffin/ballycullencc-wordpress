@@ -1,0 +1,158 @@
+.navbar {
+    min-height: 75px!important;
+}
+
+.navbar-nav {
+    width: 50%;
+    margin:0 auto;
+
+    @include media-breakpoint-up(lg) {
+        width: 30%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin:0;
+        width: initial;
+    }
+}
+
+
+// Logo
+.navbar-brand {
+    margin:0;
+    padding:0;
+
+    img {
+        width: 100%;
+        transition: ease-in-out .15s;
+
+        @include media-breakpoint-up(lg) {
+            width: 85%;
+        }
+
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+
+
+.navbar-expand-xl {
+
+    .navbar-nav {
+
+        .nav-item {
+
+            padding:.5rem 1rem;
+            @include media-breakpoint-up(xl) {
+                padding:1rem 1rem;
+            }
+        
+            .nav-link {
+                position: relative;
+                color: $white;
+                padding:0 0 .5rem 0;
+                font-size: 1rem;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+                text-align:center;
+                border-bottom: solid 1px transparent;
+                font-family: 'Raleway-SemiBold', Helvetica, sans-serif;
+            
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    height: .08125em;
+                    width: 0%;
+                    transition: width 300ms ease;
+                    left: 0;
+                    bottom: -6px;
+                    background: $green;
+                }
+    
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.2rem;
+                }
+    
+                &:hover {
+
+                    color: $green;
+                
+                    &:before {
+                        width: 100%;
+                    }
+                }
+    
+            }
+
+            &.active {
+
+                .nav-link {
+                    color: $green;
+
+                    &:before {
+                       
+
+                        @include media-breakpoint-up(xl) {
+                            width: 100%;
+                            content: "";
+                        }
+                    }
+                   
+                }
+            }
+
+        }
+
+        
+
+    }
+
+}
+
+// Navbar Backgrounds
+
+.page-template {
+
+    .navbar {
+        background-color: rgba($black,.9);
+    }
+
+    &.home {
+
+        .navbar {
+            background-color: transparent;
+
+            .custom-logo-link {
+                opacity: 0;
+            }
+
+            &.fadeIn {
+                background-color: rgba($black,.9);
+
+                .custom-logo-link {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.post-type-archive-wpfc_sermon {
+    
+    .navbar {
+        background-color: rgba($black,.9);
+    }
+
+}
+
+.single-wpfc_sermon {
+    
+    .navbar {
+        background-color: rgba($black,.9);
+    }
+
+}

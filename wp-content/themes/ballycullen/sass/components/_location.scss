@@ -1,0 +1,73 @@
+
+
+//Location - Homepage
+
+.bcc-map-link {
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+
+
+
+// Location Block - Contact Page
+
+.bcc-location-address {
+    padding-bottom: 2rem;
+}
+
+
+.bcc-location-directions {
+
+    &-item {
+        margin-bottom: 1.25rem;
+    }
+
+
+    &-item-header {
+
+        background: $gray-medium;
+
+        .btn {
+            position: relative;
+            padding:1rem;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            svg {
+                position: absolute;
+                top:50%;
+                right:1rem;
+                transform: translateY(-50%);
+                transition: all 0.9s ease;
+            }
+
+            &.active[aria-expanded=true] {
+
+                svg  {
+                    transform: rotateZ(-180deg) translateY(50%);
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+    &-body {
+       padding:1rem;
+       background: $light;
+    }
+
+
+}
+
+

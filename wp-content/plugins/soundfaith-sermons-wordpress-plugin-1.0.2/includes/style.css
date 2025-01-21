@@ -1,0 +1,9 @@
+.wtsermonnet_wrap .wtsermonnet_episode .wtsermonnet_download_link,
+.wtsermonnet_wrap .wtsermonnet_episode .wtsermonnet_visit_link {
+    padding: 0 0 0 5px;
+    vertical-align: middle;
+}
+
+.wtsermonnet_wrap .wtsermonnet_episode .wtsermonnet_meta {
+    padding: 0 0 10px 0;
+}

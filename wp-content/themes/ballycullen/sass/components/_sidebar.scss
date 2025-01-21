@@ -1,0 +1,140 @@
+.bcc-custom-sidebar {
+    margin-bottom: 1rem;;
+    padding:.5rem;
+
+    @include media-breakpoint-up(lg) {
+        padding:2rem;
+    }
+
+    h3 {
+        color: $green;
+        position: relative;
+
+        .btn {
+            position: absolute;
+            right:0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    background: $light;
+
+
+    &-menu {
+
+       
+        @include media-breakpoint-up(lg) {
+            margin-top: 1.5rem;
+        }
+
+        .nav-link {
+            color: $dark;
+        }
+
+        ul {
+            margin: 1.5rem 0 0 0;
+            padding: 0;
+
+            @include media-breakpoint-up(lg) {
+                margin: 0;
+            }
+        }
+
+        li {
+            margin-bottom: 1rem;
+            list-style: none;
+            padding-bottom: .75rem;
+            border-bottom: solid 1px lighten($dark, 60%);
+
+            &:focus {
+                background-color: transparent;
+            }
+
+            &.active {
+                a {
+                    color: $green;
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                font-weight: 700;
+                
+                &:hover {
+                    color: $green;
+                    background: none;
+                }
+
+                &:focus {
+                    background-color: transparent;
+                }
+
+            }
+
+            &:last-child {
+                border: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            ul {
+                margin-top:.5rem;
+                li {
+                    border: none;
+                    margin-bottom: 0rem;
+                    padding-bottom: 0rem;
+
+                    &.active {
+                        a {
+                            color: $green;
+                            font-weight: 700;
+                        }
+
+                        &:focus {
+                            background-color: transparent;
+                        }
+
+                    }
+
+                    &:focus {
+                        background-color: transparent;
+                    }
+
+                    a {
+                        font-weight: 400;
+                        
+                        &:hover {
+                            color: $green;
+                            background: none;
+                        }
+
+                        &:focus {
+                            background-color: transparent;
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+
+        .dropdown-toggle {
+
+            &:after {
+                display: none;
+            }
+        }
+
+        .dropdown-menu {
+
+            position: relative;
+            display: block;
+            float: none;
+            left: inherit;
+            border:none;
+            background: none;
+        }
+
+    }
+}

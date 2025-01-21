@@ -1,0 +1,145 @@
+/*
+* Use existing Bootstrap 4 classes and
+* variables to extend - override CF7 style
+*
+* Useful CF7 classes:
+* .wpcf7 the wrapper element
+* .wpcf7-form
+* .wpcf7-form-control
+* .wpcf7-text
+* .wpcf7-email
+* .wpcf7-textarea
+* .wpcf7-submit
+*/
+
+// keep a max width in case it is just the form and nothing else
+// we do not want a form spanning whole page
+div.wpcf7 {
+    // max-width: 600px;
+    // margin: 0 auto !important;
+    background: $secondary;
+
+    margin-top: 3rem;
+    padding: 2.5rem 15px 2rem 15px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 3rem;
+        padding: 5rem 15px 3rem 15px;
+
+    }
+  
+    // all inputs except radios and checkboxes inherit from form-control
+    input[type=text],
+    input[type=search],
+    input[type=url],
+    input[type=tel],
+    input[type=number],
+    input[type=range],
+    input[type=date],
+    input[type=month],
+    input[type=week],
+    input[type=time],
+    input[type=datetime],
+    input[type=datetime-local],
+    input[type=color],
+    input[type=email],
+    input[type=file],
+    input[type=submit],
+    select,
+    textarea {
+      @extend .form-control;
+      color: $white;
+      border-radius: $border-radius;
+     
+
+      &::placeholder {
+          color: $white;
+      }
+    }
+  
+    // submit button, inherit .btn and .btn-outline-primary classes.
+    input[type=submit] {
+      @extend .btn;
+      @extend .btn-green;
+      @extend .btn-lg;
+      height: auto;
+      display: block;
+    }
+
+    h2 {
+        color: $white;
+
+        &:after {
+            background: $white;
+        }
+    }
+
+
+  
+    .wpcf7-form {
+
+        
+
+        @include media-breakpoint-up(md) {
+            max-width: 550px;
+            margin: 0 auto !important;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 600px;
+        }
+  
+        // set paragraphs to behave like divs with class .form-group
+        p {
+            //@extend .form-group;
+            margin:0;
+            padding:0;
+        }
+    
+        // let labels be 100%
+        label {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+
+        
+        input[type=text],
+        input[type=email],
+        select,
+        textarea {
+            background: $green;
+            border:solid 1px $green;
+            padding: 1.75rem 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        select {
+            border-radius: 0;
+            appearance: none;
+            background-image: url(../img/select-arrow-alt.svg);
+            padding: 0 .75rem;
+            height: 60px;
+            width: 95%;
+        }
+
+        textarea {
+            padding-top: .5rem;
+        }
+
+
+    }
+  
+    // not valid tip for each control
+    .wpcf7-not-valid-tip {
+      color: theme-color("danger");
+    }
+  
+    // validation errors ourput bottom of form
+    .wpcf7-validation-errors {
+      @extend .form-control;
+      color: theme-color("danger");
+      border: 1px solid $gray-200;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+// FONTS
+
+
+@mixin raleway() {
+  @include font-face("Raleway", "../fonts/Raleway/Raleway-Regular", 400, normal, eot woff2 woff);
+}
+
+@mixin ralewayitalic() {
+  @include font-face("Raleway-Italic", "../fonts/Raleway/Raleway-Italic", 300, italic, eot woff2 woff);
+}
+
+
+@mixin ralewaybold() {
+  @include font-face("Raleway-Bold", "../fonts/Raleway/Raleway-Bold", 700, normal, eot woff2 woff);
+}
+
+@mixin ralewaylight() {
+  @include font-face("Raleway-Light", "../fonts/Raleway/Raleway-Light", 100, normal, eot woff2 woff);
+}
+
+@mixin ralewayextralight() {
+  @include font-face("Raleway-ExtraLight", "../fonts/Raleway/Raleway-ExtraLight", 200, normal, eot woff2 woff);
+}
+
+
+@mixin bree() {
+  @include font-face("Bree-Serif", "../fonts/Bree/BreeSerif-Regular", 400, normal, eot woff2 woff);
+}
+
+
+@mixin merriweather() {
+  @include font-face("Merriweather", "../fonts/Merriweather/Merriweather-Bold", 700, normal, eot woff2 woff);
+}
+
+
+

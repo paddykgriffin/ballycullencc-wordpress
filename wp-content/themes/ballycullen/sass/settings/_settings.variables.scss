@@ -1,0 +1,119 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+// Bootstrap Over-ride Colours
+$primary: #213923;
+$secondary: #B3C652;
+$body-color: #666666;
+$black: #1D1F10;
+$white: #ffffff;
+$dark-gray: $body-color;
+$text-muted: $white;
+
+
+// Custom Colours
+$green: #789912;
+$gray: #F4F6F8;
+$gray-medium: #E5E8EA;
+$light: #F2F0F0;
+$begin: $white;
+
+
+// Colour Map
+$theme-colors: (
+  "green": $green,
+  "light": $light,
+  "begin": $begin,
+  "white": $white
+);
+
+// Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px,
+  //xxl: 1600px
+); 
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  xxxl: 1900px
+);
+
+
+
+
+// Borders
+$border-radius:       0;
+$border-radius-lg:    0;
+$border-radius-sm:    0;
+
+//Button
+$input-btn-padding-y-lg:      0.75rem;
+$input-btn-padding-x-lg:      1.75rem;
+
+
+// Font 
+$font-size-base:             1.1rem;
+$font-family-sans-serif:    'Raleway', Helvetica, sans-serif;
+$font-size-lg:                1.5rem;
+
+// Responsive Font Sizes
+$enable-responsive-font-sizes: true;
+
+
+
+// Headings
+$headings-font-family:      'Bree-Serif', Georgia, serif;
+$headings-font-weight:       400;
+$h1-font-size:                $font-size-base * 3.5;
+$h2-font-size:                $font-size-base * 2.5;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   2rem;
+
+
+
+// Hero
+$hero-height-default: 100vh;
+// $hero-height-md: 50vh;
+// $hero-height-lg: 100vh;
+// $hero-height-xl: 100vh;
+
+
+$hero-inner-default: 230px;
+$hero-inner-md: 35vh; 
+$hero-inner-lg: 40vh;
+
+
+
+// Animations 
+// ref: assets/animate-sass/helpers/_settings.scss
+
+$use-all: true;
+$use-bounce: true;
+$base-duration: 2.5s;
+$base-distance: 5px;
+$use-fade: true;
+$use-slide: true;
+$use-attention-seekers: true;   

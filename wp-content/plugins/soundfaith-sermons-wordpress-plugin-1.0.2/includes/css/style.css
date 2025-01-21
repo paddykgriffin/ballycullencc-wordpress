@@ -1,0 +1,60 @@
+.mce-window .mce-container-body {
+    min-height: 120px;
+}
+
+.forceColors small{
+    display: block;	padding: 15px 0;
+}
+
+.forceColors textarea{
+    width: 72%;
+}
+
+.forceColors div {
+	margin: 0 0 10px;
+	padding: 0 5px;
+}
+
+.forceColors label {
+	margin: 0 0 5px;
+	font-size:17px;
+}
+
+#cap-slider-items .option-item span {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.forceColors select {
+	height:25px;
+}
+
+.forceColors select option{
+	padding:5px;
+}
+
+.forceColors #insert {
+    border: 0 none;
+    border-radius: 30px;
+    box-shadow: none;
+    height: 25px;
+    text-align: center;
+    text-shadow: none;
+    width: 60px;
+}
+
+.forceColors input[type="radio"]{
+	height:25px;
+	padding:0 5px;
+    width: 10%;
+}
+
+
+.forceColors input[type="text"]
+{
+	height:25px;
+	padding:0 5px;
+    width: 30%;
+}
+
+

@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /wp-content/uploads/
+Disallow: /wp-content/plugins/
+Disallow: /wp-admin/
+
+
+Sitemap: https://www.ballycullencc.com/sitemap_index.xml

@@ -1,0 +1,46 @@
+
+
+.grid-box-inner {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    transition: box-shadow 300ms ease;
+
+    .grid-name {
+        width:75%;
+        padding:1rem 0;
+        color: $white;
+        font-family: 'Bree-Serif', serif;
+        font-weight: 400;
+        font-style: normal;
+        border: solid 1px $white;
+        background: rgba($black,.3);
+        @include center-object;
+        text-transform: capitalize;
+        @include font-size(1.5rem);
+        z-index: 2;
+       
+
+        @include media-breakpoint-up(md) {
+            width:75%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width:60%;
+        }
+        @include media-breakpoint-up(xl) {
+            width:50%;
+        }
+       
+    }
+
+    &:hover {
+        .btn {
+            background: rgba($black,.8);
+        }
+
+        box-shadow: 2px 4px 12px rgba($black,.7);
+    }
+
+    
+
+}
